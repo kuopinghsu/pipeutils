@@ -1,4 +1,6 @@
+////////////////////////////////////////////////////////////
 // pipeline control
+////////////////////////////////////////////////////////////
 task pipeline;
 
     // state machine
@@ -26,14 +28,16 @@ begin
         default: begin // READY
             ready_out   = 1'b1;
             valid_in    = valid_out;
-            statll      = !(ready_in && valid_out);
+            stall       = !(ready_in && valid_out);
             state_nxt   = (!ready_in && valid_out) ? 1'b0 : 1'b1;
         end
     endcase
 end
-endtask;
+endtask
 
+////////////////////////////////////////////////////////////
 // pipeline bypass
+////////////////////////////////////////////////////////////
 task bypass;
     // state machine
     input               state;

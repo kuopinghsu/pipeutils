@@ -18,9 +18,9 @@ Assign the state machine for ready/valid control.
 always @(posedge clk or negedge resetb)
 begin
     if (!resetb)
-        state	    <= 1'b0;
+        state		<= 1'b0;
     else
-        state	    <= state_nxt;
+        state		<= state_nxt;
 end
 ```
 
@@ -49,7 +49,7 @@ Data path.
 always @(posedge clk)
 begin
     if (!stall)
-        dout        <= din
+        dout		<= din
 end
 ```
 
