@@ -60,12 +60,10 @@ end
 
 ## bypass
 
-The source code of bypass logic is at <A Href="https://github.com/kuopinghsu/pipeutils/blob/master/rtl/bypass.vh">bypass.vh</A>
-
-Include the bypass task.
+Include the pipeline task.
 
 ```verilog
-`include "bypass.vh"
+`include "pipeline.vh"
 ```
 
 Assigned the ready/valid state machine.
