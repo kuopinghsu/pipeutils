@@ -1,3 +1,6 @@
+// Written by Kuoping Hsu, kuoping.hsu@gmail.com
+// LGPL license
+
 // pipeline demux 1 to 2
 task pipeDeMux12;
     input           ready_in;
