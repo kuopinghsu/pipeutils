@@ -147,13 +147,28 @@ ready_out4 = ready_in & valid_out1 & valid_out2 & valid_out3;
 
 ## Multiplier-Adder
 
-
-
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add.svg" alt="mul_add" width=640>
 
-
-
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add2.svg" alt="mul_add2" width=640>
+
+## Data read
+
+This is an example to show the data request.
+
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/datareq.svg" alt="datareq" width=800>
+
+### Address path
+
+1. address generator
+2. address arbitor 
+3. pipeline demutiplexor
+4. address request
+
+### Data path
+
+1. data respond
+2. pipeline multiplexor
+3. data dispatcher
 
 ## Asynchronous FIFO
 
