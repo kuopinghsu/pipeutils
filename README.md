@@ -147,7 +147,11 @@ ready_out4 = ready_in & valid_out1 & valid_out2 & valid_out3;
 
 ## Multiplier-Adder
 
+### Using pipeline
+
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add.svg" alt="mul_add" width=640>
+
+### Using bypass
 
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add2.svg" alt="mul_add2" width=640>
 
