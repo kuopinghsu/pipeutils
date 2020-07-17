@@ -120,7 +120,7 @@ assign dout = selection ? din : dout_r;
 
 ### Extra timing path on ready_out and data path
 
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_bypass_out.svg" alt="pipe_bypass_out" width=640>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_bypass_out.svg" alt="pipe_bypass_out" width=480>
 
 ## Pipeline multiplexer and demultiplex
 
