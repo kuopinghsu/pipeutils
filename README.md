@@ -53,10 +53,10 @@ begin
 end
 ```
 
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipeline.svg" alt="pipeline" width=480>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipeline.svg" alt="pipeline" width=320>
 
 ### Timing issue on valid signal
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_back2back.svg" alt="back2back" width=800>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_back2back.svg" alt="back2back" width=640>
 
 ## bypass
 
@@ -112,15 +112,15 @@ assign dout = selection ? din : dout_r;
 
 
 
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/bypass.svg" alt="bypass" width=480>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/bypass.svg" alt="bypass" width=320>
 
 ### Add bypass between two pipelined controls
 
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_bypass.svg" alt="pipe_bypass" width=800>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_bypass.svg" alt="pipe_bypass" width=320>
 
 ### Extra timing path on ready_out and data path
 
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_bypass_out.svg" alt="pipe_bypass_out" width=800>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_bypass_out.svg" alt="pipe_bypass_out" width=640>
 
 ## Pipeline multiplexer and demultiplex
 
@@ -149,11 +149,11 @@ ready_out4 = ready_in & valid_out1 & valid_out2 & valid_out3;
 
 ### Using pipeline
 
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add.svg" alt="mul_add" width=640>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add.svg" alt="mul_add" width=480>
 
 ### Using bypass
 
-<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add2.svg" alt="mul_add2" width=640>
+<img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/mul_add2.svg" alt="mul_add2" width=480>
 
 ## Data read
 
