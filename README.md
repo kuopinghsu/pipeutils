@@ -55,6 +55,7 @@ end
 
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipeline.svg" alt="pipeline" width=320>
 
+Verilog 
 ```verilog
 assign valid_in     = valid_out || !ready_out;
 assign stall        = !(ready_in && valid_in);
@@ -123,9 +124,22 @@ end
 assign dout = selection ? din : dout_r;
 ```
 
-
-
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/bypass.svg" alt="bypass" width=320>
+
+Verilog expression
+```verilog
+assign valid_in     = !select;
+assign stall        = !(ready_in && valid_in);
+assign ready_out    = select || ready_in;
+
+always @(posedge clk or negedge resetn)
+begin
+    if (!resetn)
+        select      <= 1'b0;
+    else
+        select      <= !(valid_out || !(select || ready_in));
+end
+```
 
 ### Add bypass between two pipelined controls
 
