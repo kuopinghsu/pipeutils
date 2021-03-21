@@ -20,7 +20,7 @@ end
 endtask
 
 // pipeline demux 1 to 3
-task pipeDeMux12;
+task pipeDeMux13;
     input           ready_in;
     output          valid_in;
 
@@ -41,7 +41,7 @@ end
 endtask
 
 // pipeline demux 1 to 4
-task pipeDeMux12;
+task pipeDeMux14;
     input           ready_in;
     output          valid_in;
 
