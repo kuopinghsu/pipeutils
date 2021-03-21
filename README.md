@@ -55,6 +55,19 @@ end
 
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipeline.svg" alt="pipeline" width=320>
 
+```verilog
+assign valid_in     = valid_out || !ready_out;
+assign stall        = !(ready_in && valid_in);
+
+always @(posedge clk or negedge resetn)
+begin
+    if (!resetn)
+        ready_out   <= 1'b0;
+    else
+        ready_out   <= ready_in && !valid_in;
+end
+```
+
 ### Timing issue on valid signal
 <img src="https://github.com/kuopinghsu/pipeutils/blob/master/images/pipe_back2back.svg" alt="back2back" width=640>
 
